@@ -1,0 +1,28 @@
+{
+    "name": "sagiys/static-site-generator",
+    "description": "Static site generator built for my future blog/portfolio project.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sagiys",
+            "email": "hallmann.adam00@gmail.com"
+        }
+    ],
+    "scripts": {
+        "test": "vendor\\bin\\phpunit",
+        "coverage": "vendor\\bin\\phpunit --coverage-html=coverage",
+        "insights": "vendor\\bin\\phpinsights --format=console",
+        "stan": "vendor\\bin\\phpstan",
+        "full": "composer test && composer stan && composer insights"
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "spatie/ray": "^1.27",
+        "phpunit/phpunit": "^9.5"
+    },
+    "require-dev": {
+        "nunomaduro/phpinsights": "^2.0",
+        "phpstan/phpstan": "^0.12.91"
+    }
+}
